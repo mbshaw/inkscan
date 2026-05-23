@@ -206,7 +206,8 @@ function dateAsDDMMYYY(d){
     $( "#barcodes" ).change(function() {
         console.log( "Handler for .change() called." );
         addRow("scansBody",$("#date").val(), $("#JobNo").val(), $("#Weight").val(), $("#barcodes").val());
-        $("#barcodes").val("", $("#barcodes").val());
+        //$("#barcodes").val("", $("#barcodes").val());
+        $("#Weight").val("");
         $("#barcodes").val("");
       });
     
