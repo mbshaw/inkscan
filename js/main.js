@@ -30,7 +30,7 @@ function clearTableBody(tableBody){
     //dvCSV.innerHTML = "";
 }
 
-function addRow(tBodyID, rDate, rJobNo,rWeight, rBatchCode ) {
+function addRow(tBodyID, rDate, rJobNo, rWeight, rBatchCode ) {
     //console.log(tBodyID);
     var body = document.getElementById(tBodyID);
     //console.log(body);
@@ -209,6 +209,7 @@ function dateAsDDMMYYY(d){
         //$("#barcodes").val("", $("#barcodes").val());
         $("#Weight").val("");
         $("#barcodes").val("");
+        document.getElementById("#Weight").focus();
       });
     
     
