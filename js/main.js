@@ -210,6 +210,7 @@ function dateAsDDMMYYY(d){
         $("#Weight").val("");
         $("#barcodes").val("");
         $("#Weight").focus();
+        document.getElementById("Weight").select();
       });
     
     
