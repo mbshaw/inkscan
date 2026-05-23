@@ -30,14 +30,15 @@ function clearTableBody(tableBody){
     //dvCSV.innerHTML = "";
 }
 
-function addRow(tBodyID, rDate, rJobNo, rBatchCode ) {
+function addRow(tBodyID, rDate, rJobNo,rWeight, rBatchCode ) {
     //console.log(tBodyID);
     var body = document.getElementById(tBodyID);
     //console.log(body);
     var row = body.insertRow(0);
     row.insertCell(0).innerHTML = rDate;
     row.insertCell(1).innerHTML = rJobNo;
-    row.insertCell(2).innerHTML = rBatchCode;
+    row.insertCell(2).innerHTML = rWeight;
+    row.insertCell(3).innerHTML = rBatchCode;
 }
 
 
@@ -204,7 +205,8 @@ function dateAsDDMMYYY(d){
 
     $( "#barcodes" ).change(function() {
         console.log( "Handler for .change() called." );
-        addRow("scansBody",$("#date").val(), $("#JobNo").val() , $("#barcodes").val());
+        addRow("scansBody",$("#date").val(), $("#JobNo").val(), $("#Weight").val(), $("#barcodes").val());
+        $("#barcodes").val("", $("#barcodes").val());
         $("#barcodes").val("");
       });
     
