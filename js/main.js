@@ -209,7 +209,7 @@ function dateAsDDMMYYY(d){
         //$("#barcodes").val("", $("#barcodes").val());
         $("#Weight").val("");
         $("#barcodes").val("");
-        document.getElementById("Weight").focus();
+        $("#Weight").focus();
       });
     
     
