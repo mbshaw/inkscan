@@ -7,8 +7,10 @@ This application is designed to capture the ink batch codes use for each print j
 * Open the **Ink Scan** app from the icon on the device
 the date field will contain todays date. You can change this if you want to use a different date but be consistent with the date format i.e. dd/mm/yyyy
 * Enter the Job number in the 'Job Number' field below
-* Tap on the Barcode field to select it (it will have a blue border to sow it is selected)
+* Enter the wieght in the 'Weight' field below
+* Tap on the Barcode field to select it (it will have a blue border to show it is selected)
 * Scan the barcode of the ink batch codes. this will create a new line in the table
+* The Weight and Barcode fields willl Clear and the Weight field will be selected again. you will need to add a new weight before you can scan another barcode.
 
 ## Save table as CSV
 The save as CSV button will Save the current table as a CSV file. Depending on the browser settings this should save to the **'Downloads'** folder
@@ -83,4 +85,5 @@ To enable both a BT barcode scanner and the screen keyboard:
 - [x] Import saved csv files to app table
 - [x] Add loaded Job number to form
 - [x] Clear table data when loading saved file
+- [x] Added Weight to table
 - [ ] Allow editing of table cells in app
