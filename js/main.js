@@ -47,7 +47,7 @@ function ClearTable(){
     document.getElementById("scansBody").innerHTML = "";
 }
 
-$("#btn-clear").click(ClearTable());
+$("#btn-clear").click(ClearTable);
 
 $("#btn-save").click( function() {
     var jobNo = $("#JobNo").val();
@@ -168,18 +168,6 @@ function dateAsDDMMYYY(d){
             var reader = new FileReader();
             reader.addEventListener('load', getReadFile(reader, i));
             reader.readAsText(file);
-            console.log(reader);
-            var rows = reader.result.split("\r");
-            for (var i = 1; i < rows.length; i++) {         //array starts at 1 to remove header
-                var cells = rows[i].split(",");
-                if (cells.length > 1) {
-                    var row = table.insertRow(-1);
-                    for (var j = 0; j < cells.length; j++) {
-                        var cell = row.insertCell(-1);
-                        cell.innerHTML = cells[j];
-                    }
-                }
-            }
         };
     }
 
